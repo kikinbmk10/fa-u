@@ -1,0 +1,30 @@
+.title-activismo-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    .title-activismo-black{
+        position: relative;
+        color: $color-primary;
+        font-size: 38px;
+        text-transform: none;
+
+        &::before{
+            position: absolute;
+            top: 0;
+            left: -16px;
+            content: ('i');
+            color: $color-secondary;
+            font-size: 56px;
+        }
+    }
+
+    .title-activismo-yellow{
+        position: relative;
+        color: $color-secondary;
+        font-size: 38px;
+        text-transform: none;
+    }
+}
