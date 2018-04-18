@@ -1,0 +1,124 @@
+footer {
+  background-color: $gray-lighter;
+  .j-wrap {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    // Footer-body
+    .footer-body {
+      display: flex;
+      // Navigation
+      nav {
+        margin-right: 32px;
+        button.btn-outline {
+          border-color:$gray-dark;
+          color: $gray-dark;
+          &:hover {
+            background-color: $gray-dark;
+            color:white;
+          }
+        }
+      }
+      // Contact
+      .contact {
+        margin-right: 32px;
+        .media-element {
+          display: flex;
+          font-size: 14px;
+          justify-content: flex-start;
+          align-items: initial;
+          flex-direction: row;
+          img {
+            max-height: 64px;
+            margin-right: 8px;
+            font-size: 15px;
+          }
+          a {
+            color: $gray-dark;
+            text-transform: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          &.contact-us {
+            img {
+              margin-right: 0;
+            }
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-width: 184px;
+              max-width: 60%;
+              padding: 8px;
+              background-color: $color-primary;
+              color: $color-secondary;
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+        .inline-social-icons {
+          display: flex;
+          justify-content: space-around;
+          a {
+            margin-right: 16px;
+            img {
+              height: 40px;
+              margin: 0;
+            }
+          }
+        }
+      }
+      // Map
+      .map {
+        height: 372px;
+        iframe {
+          min-width: 456px;
+          width: 100%;
+          height: 372px;
+        }
+      }
+      // Responsive Behavior
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+        nav,.contact,.map {
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          flex-direction: column;
+          text-align: left;
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 16px;
+          .media-element {
+            width: 100%;
+          }
+          iframe {
+            max-width: 100%;
+            min-width: 0;
+          }
+        }
+      }
+    }
+    // Footer bottom
+    .footer-bottom {
+      text-align: center;
+      margin: 64px 0;
+      svg {
+        height: 56px;
+        fill: #fff;
+        margin-bottom: 16px;
+      }
+      p {
+        color: $color-inverse;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

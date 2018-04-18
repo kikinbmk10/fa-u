@@ -1,0 +1,28 @@
+.h3-contact{
+    position: relative;
+    font-size: 22px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    z-index: 2;
+    @media screen and (max-width: $tablet) {
+      text-align: center;
+    }
+}
+.fondo-contact-title{
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 72px;
+    background: $color-primary;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+    @media screen and (max-width: $mobile) {
+      height: 150px;
+    }
+}

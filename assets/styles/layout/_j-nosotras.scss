@@ -1,0 +1,78 @@
+.mision-vision {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  p {
+    margin: 0;
+  }
+}
+.principios {
+  .j-wrap {
+    align-items: center;
+    h2 {
+      font-size: 40px;
+      color: $gray-dark;
+      @media screen and (max-width: $mobile){
+        font-size: 32px;
+      }
+    }
+    p.sub-description {
+      max-width: 980px;
+      margin-bottom: 32px;
+    }
+    .media-elements {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .media-element {
+        margin-right: 16px;
+        min-width: 340px;
+        @media screen and (max-width: $mobile){
+          min-width: 100%;
+        }
+        // Header del media element
+        &-header {
+          align-items: center;
+          img {
+            height: 48px;
+          }
+          h2 {
+            font-size: 24px;
+          }
+        }
+        // Body del media element principalemente el que contiene la explicacion
+        &-body {
+          padding: 16px;
+          p {
+            margin-left: 8px;
+            border-left: 1px solid #f9ce0d;
+            padding-left: 16px;
+          }
+        }
+        &.in-box {
+          border: 1px solid $gray-light;
+          padding: 24px;
+        }
+        // Colors for the iconography
+        &:first-child {
+          h2 {color: #6a1134;}
+        }
+        &:nth-child(2) {
+          h2 {color: #6eb12b;}
+        }
+        &:nth-child(3) {
+          h2 {color: #1a9a99;}
+        }
+        &:nth-child(4) {
+          h2 {color: #818181;}
+        }
+        &:nth-child(5) {
+          h2 {color: #4d5158;}
+        }
+        &:nth-child(6) {
+          h2 {color: #f8ce0e;}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.cta-hook {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../images/flores-icons.svg');
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 25% 0;
+  p {
+    max-width: 50vw;
+    @media screen and (max-width: $mobile) {
+      max-width: 100%;
+    }
+  }
+}
