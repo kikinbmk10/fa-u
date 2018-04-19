@@ -263,3 +263,10 @@
       background-position: bottom;
     }
   }
+
+  .p-responsive-hero-publicaciones{
+    @include mobile{
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }

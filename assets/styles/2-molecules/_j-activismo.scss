@@ -4,20 +4,38 @@
     justify-content: center;
     width: 100%;
     height: auto;
+    
+    @include tablet{
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;        
+    }
 
     .title-activismo-black{
         position: relative;
         color: $color-primary;
         font-size: 38px;
         text-transform: none;
+        @include mobile{
+            font-size: 30px;
+            text-align: center;
+        }
 
         &::before{
             position: absolute;
-            top: 0;
-            left: -16px;
+            top: -40px;
+            left: -32px;
             content: ('i');
-            color: $color-secondary;
-            font-size: 56px;
+            color: $gray-title;
+            font-size: 90px;
+            @include mobile{
+                top: -20px;
+                font-size: 58px;
+            }
         }
     }
 
@@ -26,5 +44,277 @@
         color: $color-secondary;
         font-size: 38px;
         text-transform: none;
+        @include mobile{
+            font-size: 28px;
+            text-align: center;
+        }
+
+
+        &::after{
+            position: absolute;
+            top:  -40px;
+            right: -32px;
+            content: ('!');
+            color: $gray-title;
+            font-size: 90px;
+            @include mobile{
+                font-size: 58px;
+                top: -24px;
+                right: -8px;
+            }
+        }
+    }
+}
+
+.p-activismo{
+    margin-top: 16px !important;
+    font-size: 22px;
+    color: $gray-text;
+    letter-spacing: 0px;
+
+    strong{
+        color: #000;
+        font-size: 22px;
+    }
+    small{
+        font-size: 22px;
+        color: $color-text-acti;
+    }
+}
+
+.nuestra-ruta{
+    position: relative;
+    width: 100%;
+    background: $color-primary;
+    height: 32px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    .nr-title-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        padding: 8px 40px 8px 40px;
+        @include mobile{
+            width: 70%;
+            padding: 8px 16px 8px 16px;
+        }
+
+        .nr-h3-yellow{
+            position: relative;
+            color: $color-secondary;
+            font-size: 32px;
+            text-transform: none;
+            margin-bottom: 0 !important;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+        .nr-h3-black{
+            position: relative;
+            color: $color-primary;
+            font-size: 32px;
+            text-transform: none;
+            margin-bottom: 0 !important;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+    }
+}
+.espacio-iframe{
+    height: 200px;
+}
+.cta-construir{
+    position: relative;
+    width: 100%;
+    padding: 24px 0px 0px 24px;
+    background: $cta-bg;
+    @include mobile{
+        padding: 24px 0px 0px 0px;
+    }
+}
+.p-cta-construir{
+    align-self: flex-start;
+    width: 90%;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 8px 0px 32px;
+    margin-bottom: 0 !important;
+    @include mobile{
+        width: 100%;
+        padding: 0 8px 0 0;
+        font-size: 16px;
+    }
+
+    i{
+        font-weight: bold;
+    }
+}
+
+.este-camino{
+    position: relative;
+    width: 100%;
+    background: $color-secondary;
+    height: 32px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    @include mobile{
+        margin-bottom: 40px;
+    }
+
+    .nr-title-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53%;
+        background: white;
+        padding: 8px 16px 8px 16px;
+        @include tablet{
+            width: 90%;
+            padding: 8px 16px 8px 16px;
+        }
+        @include mobile{
+            width: 90%;
+            padding: 8px 8px 8px 8px;
+        }
+        .nr-h3-black{
+            position: relative;
+            color: $color-primary;
+            font-size: 32px;
+            text-transform: none;
+            text-align: center;
+            margin-bottom: 0 !important;
+            @include tablet{
+                font-size: 26px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+    }
+}
+.camino-columnas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: white;
+    margin-bottom: 32px;
+    @include tablet{
+        flex-wrap: wrap;
+    }
+
+    .camino-col-2{
+        width: 16.666666%;
+        padding: 8px;
+        border-left: 1.5px solid #bbbbbb;
+        @include tablet{
+            width: 33%;
+        }
+        @include mobile{
+            width: 100%;
+            border-right:  1.5px solid #bbbbbb;
+        }
+        &:last-child{
+            border-right:  1.5px solid #bbbbbb;
+           
+        }
+        
+        .column-ul{
+            padding-left: 16px;
+            .column-li{
+                font-size: 11px;
+                @include mobile{
+                    font-size: 14px;
+                }
+            }
+        }
+        hr{
+            border-top: none;
+            border-bottom: solid 1.5px;
+            border-color: #bbbbbb;
+            width: 100%;
+        }
+    }
+    .camino-col-6{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding: 8px;
+        border-left: 1.5px solid #bbbbbb;
+        @include tablet{
+            width: 100%;
+            margin-left: 4px;
+            margin-top: 16px;
+        }
+        @include mobile{
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 0px;
+            margin-top: 0;
+            border-right:  1.5px solid #bbbbbb;
+        }
+
+        .col-inner{
+            width: 32%;
+            @include mobile{
+                width: 100%;
+            }
+            .column-ul{
+                padding-left: 16px;
+                .column-li{
+                    font-size: 11px;
+                    @include mobile{
+                        font-size: 14px;
+                    }
+                }
+            }
+            hr{
+                border-top: none;
+                border-bottom: solid 1.5px;
+                border-color: #bbbbbb;
+                width: 100%;
+            }
+        }
+    }
+    .order-col-1{
+        order: 1;
+        @include tablet{
+            order: 1;
+        }
+    }
+    .order-col-2{
+        order: 2;
+        @include tablet{
+            order: 2;
+        }
+    }
+    .order-col-3{
+        order: 3;
+        @include tablet{
+            order: 4;
+        }
+    }
+    .order-col-4{
+        order: 4;
+        @include tablet{
+            order: 3;
+        }
+    }
+    .hr-d-none{
+        display: none;
+        @include mobile{
+            display: block;
+        }
     }
 }

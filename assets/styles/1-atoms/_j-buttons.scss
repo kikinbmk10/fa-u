@@ -214,3 +214,40 @@ button, .btn-solid {
       opacity: 0;
     }
 }
+
+//btns
+.btn-video-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .btn-verVideo{
+      max-width: 184px;
+      background: $color-secondary;
+      padding: 8px 16px 8px 18px;
+      color: #000;
+      font-size: 22px;
+      border: 1px solid #777777;
+      margin-top: 24px;
+  }
+}
+.btn-leenos{
+  align-self: flex-end;
+  max-width: 136px;
+  background: $color-secondary;
+  padding: 8px 16px 8px 18px;
+  color: #000;
+  font-size: 22px;
+  border: 1px solid #777777;
+  margin-top: 0px;
+
+  @include mobile{
+    align-self: center;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  &:hover{
+    background: $color-secondary;
+  }
+}

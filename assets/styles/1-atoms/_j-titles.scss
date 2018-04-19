@@ -28,3 +28,65 @@
         font-size: 48px !important;
     }
 }
+.title-construir{
+    position: relative;
+    color: $color-secondary !important;
+    font-size: 34px !important;
+
+    @include tablet{
+        font-size: 26px !important;
+        text-align: center;
+        align-self: center;
+    }
+
+    @include mobile{
+        font-size: 18px !important;
+    }
+    &::before{
+        position: absolute;
+        top: -64px;
+        left: -32px;
+        content: ('i');
+        color: #fff;
+        font-size: 96px;
+        @include tablet{
+            left: 0;
+        }
+        @include mobile{
+            top: -20px;
+            left: -8px;
+            font-size: 58px;
+        }
+    }
+    &::after{
+        position: absolute;
+        top: -64px;
+        right: -32px;
+        content: ('!');
+        color: #fff;
+        font-size: 96px;
+        @include tablet{
+            right: 12px;
+        }
+        @include mobile{
+            top: -20px;
+            right: -8px;
+            font-size: 58px;
+        }
+    }
+}
+
+.column-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h4{
+        font-size: 22px;
+        margin-bottom: 0 !important;
+        color: $cta-bg;
+        text-transform: none;
+        @include mobile{
+            font-size: 18px;
+        }
+    }
+}
