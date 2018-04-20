@@ -111,3 +111,75 @@
         font-size: 34px !important;
     }
 }
+
+.donaciones-title-hero{
+
+    font-size: 70px !important;
+    text-transform: none;
+    font-weight: bold !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    margin-left: 40px;
+    @include mobile{
+        font-size: 50px !important;
+        margin-left: 0;
+    }
+}
+
+.donaciones-h2-hero{
+    position: relative;
+    font-size: 30px !important;
+    text-transform: none;
+    color: #fff;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+    margin-left: 72px;
+    @include mobile{
+        margin-left: 0;
+        font-size: 34px !important;
+    }
+    &::before{
+        position: absolute;
+        top: -24px;
+        left: -32px;
+        content: ('i');
+        color: $color-secondary;
+        font-size: 100px;
+       
+        @include mobile{
+            display: none;
+        }
+    }
+    &::after{
+        position: absolute;
+        top: -24px;
+        right: -32px;
+        content: ('!');
+        color: $color-secondary;
+        font-size: 100px;
+       
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
+.h2-donaciones-form{
+    width: fit-content;
+    font-size: 24px !important;
+    text-transform: none;
+    font-weight: normal !important;
+    background: $color-primary;
+    color: #fff;
+    padding: 16px 32px 16px 16px;
+    @include tablet{
+        width: 100%;
+        padding: 16px;
+    }
+    @include mobile{
+        text-align: center;
+        font-size: 20px !important;
+        padding: 8px;
+    }
+}
