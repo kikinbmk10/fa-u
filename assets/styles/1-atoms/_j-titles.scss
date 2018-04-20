@@ -90,3 +90,24 @@
         }
     }
 }
+.mujeres-title-hero{
+    font-size: 78px !important;
+    text-transform: none;
+    font-weight: bold !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    @include mobile{
+        font-size: 50px !important;
+    }
+}
+.programa-h2-hero{
+    font-size: 44px !important;
+    text-transform: none;
+    color: $color-secondary;
+    font-weight: bold !important;
+    line-height: 1 !important;
+    margin-bottom: 0 !important;
+    @include mobile{
+        font-size: 34px !important;
+    }
+}

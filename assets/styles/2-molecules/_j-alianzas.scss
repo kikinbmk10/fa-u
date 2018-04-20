@@ -1,0 +1,210 @@
+.objetivos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    @include mobile{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .objetivo-item{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 27%;
+        height: 144px;
+        padding: 8px 24px 24px 56px;
+
+        @include tablet{
+            height: 192px;
+            padding: 8px 16px 16px 16px;
+        }
+        @include mobile{
+            height: 144px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        p{
+            color: #fff;
+            font-size: 14px;
+        }
+        img{
+            position: absolute;
+            top: -64px;
+            left: -24px;
+            width: 88px;
+            height: 88px;
+            @include mobile{
+                top: -24px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 64px;
+                height: 64px;
+                
+            }
+        }
+    }
+    .bg-item1{
+        background: $color-primary;
+    }
+    .bg-item2{
+        background: $cta-bg;
+    }
+    .bg-item3{
+        background: $color-secondary;
+    }
+}
+
+.alianzas-title{
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+    @include tablet{
+        flex-direction: column;
+    }
+
+    .bg-alianzas{
+        width: 120px;
+        height: 32px;
+        background: $color-primary;
+        margin-bottom: 16px;
+        margin-right: 24px;
+        @include tablet{
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .alianzas-h3-yellow{
+        color: $color-secondary;
+        font-size: 32px;
+        @include mobile{
+            font-size: 26px;
+            text-align: center;
+            margin-bottom: 0 !important;
+        }   
+    }
+    .alianzas-h3-black{
+        color: $color-primary;
+        font-size: 32px;
+        @include mobile{
+            font-size: 26px;
+            text-align: center;
+        } 
+    }
+}
+.img-alianzas-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+
+    @include mobile{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .img-alianzas{
+        width: 20%;
+        height: 256px;
+        @include tablet{
+            width: 30%;
+        }
+        @include mobile{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+}
+.p-alianza{
+    margin-top: 32px !important;
+    font-size: 22px;
+    color: $gray-text !important;
+    letter-spacing: 0px;
+    strong{
+        font-size: 22px;
+    }
+}
+.hr-alianza{
+    margin-top: 24px;
+    border-top: none;
+    border-bottom: solid 1.5px;
+    border-color: $gray-text;
+    width: 100%;
+}
+.consorcios{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    margin-bottom: 56px;
+
+    .item-consorcio{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        img{
+            width: 33%;
+            margin-bottom: 0;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .text-container-consorcio{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 66%;
+            background: $bg-footer;
+            padding: 8px 0px 0px 16px;
+            @include tablet{
+                width: 100%;
+                padding:8px 8px 0px 8px; 
+            }
+            h4{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 0 !important;
+            }
+            p{
+                width: 99%;
+                color: $color-primary;
+                font-size: 20px;
+                @include tablet{
+                    width: 100%;
+                }
+            }
+            button{
+                align-self: flex-end;
+                max-width: 300px;
+                background: #FACE00;
+                padding: 8px 16px 8px 18px;
+                color: $color-primary;
+                font-size: 22px;
+                font-weight: normal;
+                border: 1px solid #FACE00;
+                margin-top: 0px;
+                margin-bottom: 0;
+
+                @include tablet{
+                    align-self: center;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

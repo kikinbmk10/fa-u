@@ -4,6 +4,7 @@ $black: #000000;
 $gray-title: #c1c1c1;
 $gray-text: #909090;
 $cta-bg: #1a9a99;
+$bg-footer: #d9d9d9;
 $color-text-acti: #009191;
 $color-primary:   #740033;  .color-primary   { color: $color-primary;   };  .bg-color-primary   { background-color: $color-primary !important;   }
 $color-secondary: #FACE00;  .color-secondary { color: $color-secondary; };  .bg-color-secondary { background-color: $color-secondary !important; }
@@ -65,6 +66,7 @@ $space-5: $space-base * 5; // 40px
     font-weight: 300;
     font-style: normal;
 }
+
 
 $font-family-base: 'Helvetica Neue LT Pro';
 $headings-font-family: $font-family-base;
