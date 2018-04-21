@@ -1,26 +1,287 @@
+.donaciones-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+}
 .donaciones-valor{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
     margin-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid grey;
+    @include tablet{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
     .form-item-donaciones{
         display: flex;
         flex-direction: column;
-        width: 33.3%;
+        width: 32.3%;
+        @include tablet{
+            width: 50%;
+            margin-bottom: 16px;
+        }
+        @include mobile{
+            width: 100% !important;
+        }
         .item-inner{
             display: flex;
             align-items: center;
             width: 100%;
             height: auto;
+            margin-bottom: 16px;
 
             label{
                 color: $gray-text !important;
                 font-size: 16px;
                 margin-left: 16px;
                 margin-bottom: 0;
+                @include mobile{
+                    width: 60%;
+                }
+              
             }
+            input{
+                min-width: 160px;
+                width: 80%;
+                overflow: hidden;
+                background-color: transparent;
+                padding-top: 2px;
+                padding-left: $space-base;
+                margin-left: 10px;
+                text-align: left;
+                font-size: 16px;
+                font-weight: 300;
+                color: $color-primary;
+                -webkit-transition: border-color 400ms ease-in-out;
+                transition: border-color 400ms ease-in-out;
+                height: 40px;
+                border: 2px solid gray;
+                border-radius: 2px;
+               @include mobile{
+                   width: 75%;
+               }
+            }
+        }
+    }
+}
+.donaciones-frecuencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid grey;
+    margin-top: 16px;
+    label{
+        color: $color-primary;
+        font-size: 24px;
+    }
+    .btns-container-frecuencia{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 8px;
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+}
+.proposito-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 8px 24px 24px 24px;
+    background: $cta-bg;
+
+    p{
+        font-size: 24px;
+        color: #fff;
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+    input{
+        min-width: 160px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        padding-top: 2px;
+        padding-left: $space-base;
+        margin-left: 0px;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-primary;
+        -webkit-transition: border-color 400ms ease-in-out;
+        transition: border-color 400ms ease-in-out;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 2px;
+      
+    }
+}
+
+.aporte-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    @include mobile{
+        flex-direction: column;
+    }
+
+   .otro-aporte-container{
+        display: flex;
+        flex-direction: column;
+        width: 74%;
+        background: $bg-green;
+        padding: 8px 24px 24px 24px;
+        @include tablet{
+            width: 63%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        p{
+            font-size: 24px;
+            color: #fff;
+            @include mobile{
+                font-size: 20px;
+            }
+            strong{
+                font-weight: bold;
+                font-size: 24px;
+                @include mobile{
+                    font-size: 20px;
+                }
+            }
+           
+        }
+        input{
+            min-width: 160px;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            padding-top: 2px;
+            padding-left: $space-base;
+            margin-left: 0px;
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 300;
+            color: $color-primary;
+            -webkit-transition: border-color 400ms ease-in-out;
+            transition: border-color 400ms ease-in-out;
+            height: 40px;
+            border: 2px solid gray;
+            border-radius: 2px;
+        
+        }
+   }
+   .certificacion-container{
+        display: flex;
+        flex-direction: column;
+        width: 26%;
+        background: $color-secondary;
+        padding: 8px 24px 24px 24px;
+        @include tablet{
+            width: 37%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        p{
+            font-size: 24px;
+            color: $color-primary;
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        .cb-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            label{
+                display: flex;
+                align-items: center;
+                width: 35%;
+                color: $color-primary;
+                font-size: 20px;
+                font-weight: bold;
+                @include tablet{
+                    width: 41%;
+                }
+                @include mobile{
+                    font-size: 20px;
+                }
+                input{
+                    width: 36px;
+                    height: 36px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    margin-left: 0px;
+                    margin-bottom: 0;
+                    margin-right: 8px;
+                    color: $color-primary;
+                    -webkit-transition: border-color 400ms ease-in-out;
+                    transition: border-color 400ms ease-in-out;
+                    border: 1.5px solid gray;
+                    border-radius: 2px;
+                    @include mobile{
+                        
+                    }
+                }
+            }
+        }
+   }
+}
+.terminos-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    input{
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background-color: #fff;
+        margin-left: 0px;
+        margin-top: 8px;
+        margin-bottom: 0;
+        margin-right: 8px;
+        margin-left: 16px;
+        color: $color-primary;
+        -webkit-transition: border-color 400ms ease-in-out;
+        transition: border-color 400ms ease-in-out;
+        border: 1.5px solid gray;
+        border-radius: 2px;
+        @include tablet{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    label{
+
+        color: $color-primary;
+        margin-top: 8px;
+        margin-bottom: 0;
+        @include tablet{
+            flex-wrap: wrap;
+        }
+        a{
+            color: $color-primary;
         }
     }
 }

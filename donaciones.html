@@ -217,42 +217,112 @@
     <div class="j-wrap">
         <!--  Titlo  -->
         <h2 class="h2-donaciones-form">Hoy decido cuidar la vida de las defensoras y potenciar sus movimientos:</h2>
-        <form action="#" class="donaciones-valor">
-            <div class="form-item-donaciones">
+        <!--  formulario  -->
+        <form action="#" class="donaciones-form">
+           <!--  donaciones numeros  -->
+           <div class="donaciones-valor">
+              <div class="form-item-donaciones">
                 <div class="item-inner">
-                    <button class="btn-price-donation" id="btn-25"><strong>$25</strong> USD</button>
-                    <label for="btn-25">Mi granito de arena</label>
+                  <button class="btn-price-donation" id="btn-25"><strong>$25</strong> USD</button>
+                  <label for="btn-25">Mi granito de arena</label>
                 </div>
-                <div>
-                    <button class="btn-price-donation" id="btn-50"><strong>$50</strong> USD</button>
-                    <label for="btn-50"></label>
+                <div class="item-inner">
+                  <button class="btn-price-donation" id="btn-50"><strong>$50</strong> USD</button>
+                  <label for="btn-50">Aumentando la solidaridad</label>
                 </div>
-            </div>
-            <div></div>
-            <div></div>
+              </div>
+              <div class="form-item-donaciones">
+                <div class="item-inner">
+                  <button class="btn-price-donation" id="btn-100"><strong>$100</strong> USD</button>
+                  <label for="btn-100">Con ganas de contribuir al cambio</label>
+                </div>
+                <div class="item-inner">
+                  <button class="btn-price-donation" id="btn-200"><strong>$200</strong> USD</button>
+                  <label for="btn-200">¡Mi compromiso con el movimiento!</label>
+                </div>
+              </div>
+              <div class="form-item-donaciones">
+                <div class="item-inner">
+                  <button class="btn-price-donation-2" id="btn-100">Otro valor para apoyar la transformación</button>
+                </div>
+                <div class="item-inner">
+                  <label for="valor-donacion">¿Cuál?</label>
+                  <input type="number" id="valor-donacion" name="valor-donacion">
+                </div>
+              </div>
+           </div>
+           <!--  donaciones por tiempo  -->
+           <div class="donaciones-frecuencia">
+             <label>Quiero donar: (frecuencia)</label>
+             <div class="btns-container-frecuencia">
+               <button class="btn-frecuencia">Mensualmente</button>
+               <button class="btn-frecuencia">Anualmente</button>
+               <button class="btn-frecuencia">Solo una vez</button>
+             </div>
+           </div>
+           <!--  donaciones metodos  -->
+           <div class="donaciones-frecuencia">
+              <label>Elige el medio de pago</label>
+              <div class="btns-container-frecuencia">
+                <button class="btn-frecuencia">Credit/ Debit</button>
+                <button class="btn-paypal">PAY<small>PAL</small></button>
+              </div>
+           </div>
+           <!--  donaciones proposito  -->
+           <div class="proposito-container">
+             <p>Si quieres que tu donación tenga un propósito específico, sea una organización o destinada a algún país
+                en concreto, déjanos saber aquí:</p>
+             <input type="text" name="proposito-input">
+           </div>
+           <!--  donaciones aporte  -->
+           <div class="aporte-container">
+             <div class="otro-aporte-container">
+                <p>Los apoyos no son solo económicos. <strong>¿Quisieras enviar a las defensoras de
+                    América Latina otro aporte?</strong> ¡Cuéntanos tus ideas!</p>
+                <input type="text" name="aporte-input">
+             </div>
+             <div class="certificacion-container">
+               <p>¿Deseas una certificación
+                  por la donación realizada?</p>
+              <div class="cb-container">
+                <label for="cb-si"><input type="checkbox" name="cb-si" id="cb-si">SI</label>
+                <label for="cb-no"><input type="checkbox" name="cb-no" id="cb-no">NO</label>
+              </div>
+             </div>
+           </div>
+           <!--  donaciones terminos y condiciones  -->
+           <div class="terminos-container">
+             <input type="checkbox" name="cb-terminos" id="cb-terminos">
+             <label>He leído y acepto los&nbsp;<a href="#"><u>términos y condiciones</u>&nbsp;</a> de manejo de datos del Fondo de Acción Urgente-América Latina</label>
+           </div>
+           <!--  donaciones button submit  -->
+          <button type="submit" class="btn-donar">¡DONA LA ACCIÓN!</button>
         </form>
+
     </div>
   </div>
-
- 
-
- <!-- Aqui va el iframe -->
- <div class="espacio-iframe"></div>
-
-  <!--  CTA Contruir  -->
-  <div class="cta-construir">
-    <div class="j-workspace principios">
-      <div class="j-wrap">
-        <!--  CTA titulo  -->
-       <h2 class="title-construir">CONSTRUIR, APRENDER Y TRANSFORMAR DE MANERA COLECTIVA</h2>
-       <p class="p-cta-construir">Desde FAU-AL realizamos <i>procesos de sistematización</i> de los apoyos otorgados en diversas temáticas , como forma
-        de generar conocimiento y fortalecer capacidades, junto a las activistas y organizaciones latinoamericanas que hemos
-        apoyado. Te invitamos a conocer los resultados de este trabajo...</p>
-        <!--  CTA button  -->
-        <button class="btn-leenos">LÉENOS</button>
+<hr>
+ <!-- Newsletter subscription -->
+ <div class="j-workspace newsletter">
+    <div class="j-wrap">
+      <div class="title-container">
+        <h2><span>Únete</span> a la comunidad del <span>FAU-AL</span></h2>
+      </div>
+      <div class="newsletter-input">
+        <p>Introduce aquí tu e-mail para recibir nuestro boletín</p>
+        <div class="form-group">
+          <input type="text">
+          <button class="ripple">Enviar</button>
+        </div>
+        <div class="form-group">
+          <input type="checkbox">
+          <p>He leido y acepto los <a href="#">términos y condiciones</a>  de manejo de datos del Fondo de Acción Urgente -América Latina</p>
+        </div>
       </div>
     </div>
   </div>
+
+
 
 
   <footer>

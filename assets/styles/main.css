@@ -622,6 +622,13 @@ button, .btn-solid {
   border: 1px solid #FACE00;
   margin-top: 0px;
   margin-bottom: 0; }
+  @media screen and (max-width: 1071px) {
+    .btn-price-donation {
+      padding: 8px 16px 8px 16px; } }
+  @media screen and (max-width: 747px) {
+    .btn-price-donation {
+      padding: 8px;
+      width: 40% !important; } }
   @media screen and (max-width: 747px) {
     .btn-price-donation {
       align-self: center;
@@ -632,6 +639,98 @@ button, .btn-solid {
   .btn-price-donation strong {
     font-size: 24px;
     font-weight: bold; }
+    @media screen and (max-width: 747px) {
+      .btn-price-donation strong {
+        font-size: 20px; } }
+
+.btn-price-donation-2 {
+  max-width: 100%;
+  width: 100% !important;
+  background: #FACE00;
+  padding: 12px 16px 12px 16px;
+  color: #000;
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid #FACE00;
+  margin-top: 0px;
+  margin-bottom: 0; }
+  @media screen and (max-width: 1071px) {
+    .btn-price-donation-2 {
+      font-size: 16px; } }
+  @media screen and (max-width: 747px) {
+    .btn-price-donation-2 {
+      align-self: center;
+      font-size: 16px;
+      margin-top: 16px; } }
+  .btn-price-donation-2:hover {
+    background: #FACE00; }
+
+.btn-frecuencia {
+  max-width: 100%;
+  width: fit-content !important;
+  background: #FACE00;
+  padding: 8px 24px 8px 24px;
+  color: #000;
+  font-size: 20px;
+  font-weight: normal;
+  border: 1px solid #FACE00;
+  margin-top: 0px;
+  margin-right: 24px;
+  margin-bottom: 0; }
+  .btn-frecuencia:hover {
+    background: #FACE00; }
+  @media screen and (max-width: 747px) {
+    .btn-frecuencia {
+      width: 100% !important;
+      margin-bottom: 16px;
+      margin-right: 0; } }
+
+.btn-paypal {
+  max-width: 100%;
+  width: fit-content !important;
+  background: #fff;
+  padding: 8px 24px 8px 24px;
+  color: #003087;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid blue;
+  margin-top: 0px;
+  margin-right: 24px;
+  margin-bottom: 0; }
+  .btn-paypal:hover {
+    background: #fff; }
+  @media screen and (max-width: 747px) {
+    .btn-paypal {
+      width: 100% !important;
+      margin-bottom: 16px;
+      margin-right: 0; } }
+  .btn-paypal small {
+    font-weight: bold;
+    font-size: 22px;
+    color: #009cde; }
+
+.btn-donar {
+  align-self: center;
+  max-width: 100%;
+  width: fit-content !important;
+  background: #740033;
+  padding: 10px 24px 10px 24px;
+  color: #FACE00;
+  font-size: 20px;
+  font-weight: normal;
+  border: 1px solid #740033;
+  margin-top: 16px;
+  margin-bottom: 0;
+  transition: all .2s ease-in-out; }
+  .btn-donar:hover {
+    background: #FACE00;
+    color: #740033;
+    transition: all .2s ease-in-out; }
+  @media screen and (max-width: 747px) {
+    .btn-donar {
+      width: 100% !important;
+      margin-bottom: 16px;
+      margin-right: 0; } }
 
 .input-plus {
   display: flex;
@@ -1382,6 +1481,9 @@ img {
         display: flex; }
         .j-workspace.newsletter .j-wrap .newsletter-input .form-group p {
           margin-left: 8px; }
+          .j-workspace.newsletter .j-wrap .newsletter-input .form-group p a {
+            color: #740033;
+            text-decoration: underline; }
         .j-workspace.newsletter .j-wrap .newsletter-input .form-group input[type=checkbox] {
           margin-left: 0; }
     @media screen and (max-width: 1071px) {
@@ -2018,7 +2120,7 @@ img {
   .objetivos .bg-item2 {
     background: #1a9a99; }
   .objetivos .bg-item3 {
-    background: #FACE00; }
+    background: #70b125; }
 
 .alianzas-title {
   display: flex;
@@ -2153,26 +2255,259 @@ img {
             margin-top: 24px;
             margin-bottom: 24px; } }
 
+.donaciones-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px; }
+
 .donaciones-valor {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: auto;
-  margin-top: 16px; }
+  margin-top: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid grey; }
+  @media screen and (max-width: 1071px) {
+    .donaciones-valor {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
   .donaciones-valor .form-item-donaciones {
     display: flex;
     flex-direction: column;
-    width: 33.3%; }
+    width: 32.3%; }
+    @media screen and (max-width: 1071px) {
+      .donaciones-valor .form-item-donaciones {
+        width: 50%;
+        margin-bottom: 16px; } }
+    @media screen and (max-width: 747px) {
+      .donaciones-valor .form-item-donaciones {
+        width: 100% !important; } }
     .donaciones-valor .form-item-donaciones .item-inner {
       display: flex;
       align-items: center;
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 16px; }
       .donaciones-valor .form-item-donaciones .item-inner label {
         color: #909090 !important;
         font-size: 16px;
         margin-left: 16px;
         margin-bottom: 0; }
+        @media screen and (max-width: 747px) {
+          .donaciones-valor .form-item-donaciones .item-inner label {
+            width: 60%; } }
+      .donaciones-valor .form-item-donaciones .item-inner input {
+        min-width: 160px;
+        width: 80%;
+        overflow: hidden;
+        background-color: transparent;
+        padding-top: 2px;
+        padding-left: 8px;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        color: #740033;
+        -webkit-transition: border-color 400ms ease-in-out;
+        transition: border-color 400ms ease-in-out;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 2px; }
+        @media screen and (max-width: 747px) {
+          .donaciones-valor .form-item-donaciones .item-inner input {
+            width: 75%; } }
+
+.donaciones-frecuencia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+  border-bottom: 1.5px solid grey;
+  margin-top: 16px; }
+  .donaciones-frecuencia label {
+    color: #740033;
+    font-size: 24px; }
+  .donaciones-frecuencia .btns-container-frecuencia {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 8px; }
+    @media screen and (max-width: 747px) {
+      .donaciones-frecuencia .btns-container-frecuencia {
+        flex-direction: column; } }
+
+.proposito-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 8px 24px 24px 24px;
+  background: #1a9a99; }
+  .proposito-container p {
+    font-size: 24px;
+    color: #fff; }
+    @media screen and (max-width: 747px) {
+      .proposito-container p {
+        font-size: 20px; } }
+  .proposito-container input {
+    min-width: 160px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 2px;
+    padding-left: 8px;
+    margin-left: 0px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    color: #740033;
+    -webkit-transition: border-color 400ms ease-in-out;
+    transition: border-color 400ms ease-in-out;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 2px; }
+
+.aporte-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 16px; }
+  @media screen and (max-width: 747px) {
+    .aporte-container {
+      flex-direction: column; } }
+  .aporte-container .otro-aporte-container {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    background: #70b125;
+    padding: 8px 24px 24px 24px; }
+    @media screen and (max-width: 1071px) {
+      .aporte-container .otro-aporte-container {
+        width: 63%; } }
+    @media screen and (max-width: 747px) {
+      .aporte-container .otro-aporte-container {
+        width: 100%; } }
+    .aporte-container .otro-aporte-container p {
+      font-size: 24px;
+      color: #fff; }
+      @media screen and (max-width: 747px) {
+        .aporte-container .otro-aporte-container p {
+          font-size: 20px; } }
+      .aporte-container .otro-aporte-container p strong {
+        font-weight: bold;
+        font-size: 24px; }
+        @media screen and (max-width: 747px) {
+          .aporte-container .otro-aporte-container p strong {
+            font-size: 20px; } }
+    .aporte-container .otro-aporte-container input {
+      min-width: 160px;
+      width: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      padding-top: 2px;
+      padding-left: 8px;
+      margin-left: 0px;
+      margin-bottom: 0;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 300;
+      color: #740033;
+      -webkit-transition: border-color 400ms ease-in-out;
+      transition: border-color 400ms ease-in-out;
+      height: 40px;
+      border: 2px solid gray;
+      border-radius: 2px; }
+  .aporte-container .certificacion-container {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    background: #FACE00;
+    padding: 8px 24px 24px 24px; }
+    @media screen and (max-width: 1071px) {
+      .aporte-container .certificacion-container {
+        width: 37%; } }
+    @media screen and (max-width: 747px) {
+      .aporte-container .certificacion-container {
+        width: 100%; } }
+    .aporte-container .certificacion-container p {
+      font-size: 24px;
+      color: #740033; }
+      @media screen and (max-width: 747px) {
+        .aporte-container .certificacion-container p {
+          font-size: 20px; } }
+    .aporte-container .certificacion-container .cb-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .aporte-container .certificacion-container .cb-container label {
+        display: flex;
+        align-items: center;
+        width: 35%;
+        color: #740033;
+        font-size: 20px;
+        font-weight: bold; }
+        @media screen and (max-width: 1071px) {
+          .aporte-container .certificacion-container .cb-container label {
+            width: 41%; } }
+        @media screen and (max-width: 747px) {
+          .aporte-container .certificacion-container .cb-container label {
+            font-size: 20px; } }
+        .aporte-container .certificacion-container .cb-container label input {
+          width: 36px;
+          height: 36px;
+          overflow: hidden;
+          background-color: #fff;
+          margin-left: 0px;
+          margin-bottom: 0;
+          margin-right: 8px;
+          color: #740033;
+          -webkit-transition: border-color 400ms ease-in-out;
+          transition: border-color 400ms ease-in-out;
+          border: 1.5px solid gray;
+          border-radius: 2px; }
+
+.terminos-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center; }
+  @media screen and (max-width: 747px) {
+    .terminos-container {
+      flex-direction: column;
+      align-items: flex-start; } }
+  .terminos-container input {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-right: 8px;
+    margin-left: 16px;
+    color: #740033;
+    -webkit-transition: border-color 400ms ease-in-out;
+    transition: border-color 400ms ease-in-out;
+    border: 1.5px solid gray;
+    border-radius: 2px; }
+    @media screen and (max-width: 1071px) {
+      .terminos-container input {
+        width: 20px;
+        height: 20px; } }
+  .terminos-container label {
+    color: #740033;
+    margin-top: 8px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 1071px) {
+      .terminos-container label {
+        flex-wrap: wrap; } }
+    .terminos-container label a {
+      color: #740033; }
 
 .header-container {
   position: fixed;
@@ -2509,7 +2844,11 @@ footer {
             font-weight: bold; }
         footer .j-wrap .footer-body .contact .inline-social-icons {
           display: flex;
-          justify-content: space-around; }
+          justify-content: space-around;
+          margin-top: 24px; }
+          @media screen and (max-width: 1071px) {
+            footer .j-wrap .footer-body .contact .inline-social-icons {
+              margin-top: 0; } }
           footer .j-wrap .footer-body .contact .inline-social-icons a {
             margin-right: 16px; }
             footer .j-wrap .footer-body .contact .inline-social-icons a img {

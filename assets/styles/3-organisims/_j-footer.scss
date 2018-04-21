@@ -63,6 +63,10 @@ footer {
         .inline-social-icons {
           display: flex;
           justify-content: space-around;
+          margin-top: 24px;
+          @include tablet{
+            margin-top: 0;
+          }
           a {
             margin-right: 16px;
             img {

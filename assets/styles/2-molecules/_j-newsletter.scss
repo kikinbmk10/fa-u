@@ -51,7 +51,12 @@
         padding-left: 16px;
         .form-group {
           display: flex;
-          p {margin-left: 8px;}
+          p {margin-left: 8px;
+            a{
+              color: $color-primary;
+              text-decoration: underline;
+            }
+          }
           input[type=checkbox] {
             margin-left: 0;
           }
