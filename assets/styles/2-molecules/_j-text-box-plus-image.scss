@@ -1,13 +1,58 @@
 .text-box-plus-image {
   padding-top: $space-2;
   padding-bottom: $space-2;
-  min-height: 50vh;
   display:flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
   .text-box {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
     padding-right: $space-2;
+    @include tablet{
+      width: 100%;
+    }
+    .tb-plus-h2{
+      font-size: 36px;
+      line-height: 1.2;
+      padding: 0 0 0 40px;
+      margin-bottom: 0;
+      @include mobile{
+        padding: 0;
+        font-size: 22px;
+        text-align: center;
+      }
+
+      small{
+        display: none;
+        @include mobile{
+          display: initial;
+          color: $color-secondary;
+          font-size: 22px;
+        }
+      }
+    }
+    .p-alianza{
+      margin-top: 16px !important;
+      margin-bottom: 0;
+      font-size: 22px;
+      color: $gray-text !important;
+      letter-spacing: 0px;
+      @include mobile{
+        font-size: 17px;
+        margin-bottom: 24px;
+      }
+      strong{
+          font-size: 22px;
+          @include mobile{
+            font-size: 17px;
+          }
+      }
+      
+  }
   }
   @media screen and (max-width: $tablet){
     flex-direction: column;

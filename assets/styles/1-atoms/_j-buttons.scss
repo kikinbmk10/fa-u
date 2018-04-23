@@ -383,3 +383,27 @@ button, .btn-solid {
     margin-right: 0;
   }
 }
+
+.btn-solicitar-apoyo{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $color-secondary;
+  background: $color-primary;
+  margin: 24px 0px 0px 0px;
+  padding: 8px 0px;
+
+  @include tablet{
+    font-size: 38px;
+  }
+  @include mobile{
+    font-size: 28px;
+  }
+}

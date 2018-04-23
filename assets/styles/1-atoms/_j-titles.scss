@@ -183,3 +183,119 @@
         padding: 8px;
     }
 }
+
+.arrs-title-hero{
+    @include mobile{
+        line-height: 1 !important;
+    }
+    strong{
+        @include mobile{
+            font-size: 72px !important;
+            letter-spacing: 2px;
+            margin: 0;
+            line-height: 1 !important;
+        }
+    }
+    small{
+        font-size:27px;
+        font-weight: bold;
+        color: $color-secondary;
+
+    }
+}
+.h2-como-solicitar{
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 32px;
+    @include mobile{
+        font-size: 22px;
+    }
+
+    small{
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 34px;
+        @include mobile{
+            font-size: 22px;
+        }
+    }
+}
+.title-tipos-de-apoyo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    @include mobile{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    h2{
+        color: $color-primary;
+        font-size: 36px;
+        margin-bottom: 0 !important;
+        @include mobile{
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+    .aviso{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        padding: 4px 8px 8px 8px;
+        background: #6b1234;
+
+        @include mobile{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        img{
+            margin-bottom: 0;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .p-aviso{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 0;
+            line-height: 1.2;
+            @include mobile{
+                text-align: center;
+                font-size: 18px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.list-title-1{
+    width: 100%;
+    height: auto;
+    padding: 8px 0 8px 48px;
+    background: $bg-green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    @include mobile{
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+.list-title-2{
+    width: 100%;
+    height: auto;
+    padding: 8px 0 8px 24px;
+    background: $color-secondary;
+    color: #fff;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 22px;
+    @include mobile{
+        font-size: 18px;
+        padding: 8px;
+    }
+}
